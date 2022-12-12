@@ -8,4 +8,4 @@
 UNDER CONSTRUCTION
 
 # Remark
-It should be said that the scripts are still under development.
+It should be said that the script are still under development.
