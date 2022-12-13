@@ -7,7 +7,7 @@ from Resources.HF import *
 
 # Variables
 File_Path = dirname(realpath(__file__))
-Template_Path = join(File_Path, 'skadi.tmp')
+Template_Path = join(File_Path.split('/Resources')[0], 'skadi.tmp')
 Program_Description = """-------------------------------------------------------------------------------------
 |  Created by Rainer Christian Bjoern Herold                                        |
 |  Copyright 2022. All rights reserved.                                             |
