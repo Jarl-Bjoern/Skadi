@@ -7,5 +7,26 @@
 # General Description
 UNDER CONSTRUCTION
 
+# Table of Contents
+- [How to download and install the tool](#download_install)
+  - [Download and start the tool](#start_install)
+  - [Using the help section to see which parameters do we have](#help_install)
+      
+<a name="download_install"></a>
+# How to download and install the tool
+<a name="start_install"></a>
+## Download and start the tool
+```bash
+sudo git clone https://github.com/Jarl-Bjoern/skadi
+cd skadi
+sudo python3 skadi.py
+```
+
+<a name="help_install"></a>
+## Using the help section to see which parameter do we have
+```bash
+
+```
+
 # Remark
 It should be said that the script is still under development.
