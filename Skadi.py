@@ -8,7 +8,7 @@ from Resources.VF import *
 
 # Main
 if __name__ == '__main__':
-    parser = ArgumentParser(add_help=False, formatter_class=RawTextHelpFormatter, description=Program_Description)
+    parser = ArgumentParser(add_help=False, formatter_class=RawTextHelpFormatter, description=Colors.ORANGE+Program_Description+Colors.RESET)
     required = parser.add_argument_group(Colors.ORANGE+'required arguments'+Colors.RESET)
     auth_arguments = parser.add_argument_group(Colors.ORANGE+'authentication arguments'+Colors.RESET)
     generator_arguments = parser.add_argument_group(Colors.ORANGE+'generator arguments'+Colors.RESET)
