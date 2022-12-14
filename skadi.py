@@ -17,6 +17,7 @@ if __name__ == '__main__':
 
     required.add_argument('-u', '--url', type=str, help=Colors.GREEN+'This parameter specify one target.'+Colors.RESET+'\n\n'+Colors.BLUE+'-------------------------------------------------------------------------------------'+Colors.RESET)
     required.add_argument('-iL', '--import-list', type=str, help=Colors.GREEN+'This parameter specifies your targets.'+Colors.RESET+'\n\n'+Colors.BLUE+'-------------------------------------------------------------------------------------'+Colors.RESET)
+    required.add_argument('-tID', '--target-id', type=str, required=True, help=Colors.GREEN+'This parameter specifies your targets.'+Colors.RESET+'\n\n'+Colors.BLUE+'-------------------------------------------------------------------------------------'+Colors.RESET)
 
     auth_arguments.add_argument('-up', '--user-password', type=str, help=Colors.GREEN+'This parameter is required to specify a single user with password like in the example below'+Colors.RESET+'\n\nExample:\n  - admin:admin\n\n'+Colors.BLUE+'-------------------------------------------------------------------------------------'+Colors.RESET)
     auth_arguments.add_argument('-pk', '--pkcs12-path', type=bool, nargs='?', const=True, help=Colors.GREEN+'This parameter is used to switch your requests to pkcs12 certificate requests'+Colors.RESET+'\n\n'+Colors.BLUE+'-------------------------------------------------------------------------------------'+Colors.RESET)
