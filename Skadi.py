@@ -53,7 +53,7 @@ if __name__ == '__main__':
         for IDs in array(Read_File(args.list_path)):
             if (IDs not in Array_Template):
                if (args.pkcs12_path != None): p = Process(target=Brute_Target, args=[URL, IDs, args.sleep, args.list_path, args.output_path, args.pkcs12_path, pkcs_pw, Template_Path], daemon=True)
-               else: p = Process(target=Brute_Target, args=[URL, IDs, args.sleep, args.list_path, args.output_path, args.target_id, pkcs_pw, pkcs_pw, Template_Path], daemon=True)
+               else: p = Process(target=Brute_Target, args=[URL, args.target_error, IDs, args.sleep, args.list_path, args.output_path, args.target_id, pkcs_pw, pkcs_pw, Template_Path], daemon=True)
                p.start()
                Counter_Connections += 1
                if (Counter_Connections == args.max_connections):
